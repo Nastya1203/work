@@ -11,12 +11,12 @@ int GetUserInput(string str)
     return num;
 }
 
-bool Division(int num)
+bool DivisionTo(int num, int num1, int num2)
 {
     return num % 7 == 0 && num % 23 == 0;
 }
 
 int number = GetUserInput("Введите число: ");
-bool result = Division(number);
+bool result = DivisionTo(number,7,23);
 
-Console.WriteLine(result ? $"{number} -> да" : $"{number} -> нет");
+Console.WriteLine(result ?  "да" :  "нет");
