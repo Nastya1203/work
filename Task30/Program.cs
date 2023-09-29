@@ -7,9 +7,10 @@
 int[] RandomArray(int arrLenght)
 {
     int[] arr = new int[arrLenght];
+    Random rand = new Random();
     for (int i = 0; i < arrLenght; i ++)
     {
-        arr[i] = new Random().Next(2);
+        arr[i] = rand.Next(2);
     }
     return arr;
 }
